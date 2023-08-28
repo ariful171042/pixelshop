@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.color-p {
+  color: #f1eee9;
+}
+.bg-color-p {
+  background-color: #f1eee9;
+}
+
+.color-s {
+  color: #f55d34;
+}
+
+.bg-color-s {
+  background-color: #f55d34;
+}
+
+.t-color {
+  color: black;
+}
+
+/* nav  start*/
+
+.navbar .megamenu {
+  padding: 1rem;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .navbar .has-megamenu {
+    position: static !important;
+  }
+  .navbar .megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media (max-width: 991px) {
+  .navbar.fixed-top .navbar-collapse,
+  .navbar.sticky-top .navbar-collapse {
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top: 10px;
+  }
+}
+/* ============ mobile view .end// ============ */
+
+/* nav end */
+
+/* hero  */
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper {
+  height: 80vh;
+  background-color: #e7a32e !important;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* hero end  */
+
+/* star rating  */
+.checked {
+  color: orange;
+}
+
+/* star end  */
+
+.category-detals {
+  display: none;
+}
+
+.category-wrapper:hover .category-detals {
+  display: block;
+  transition: all 5s;
+}
